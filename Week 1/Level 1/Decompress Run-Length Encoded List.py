@@ -3,7 +3,7 @@ class Solution:
         res = []
         l= len(nums)
         for i in range(1,l,2):
-            res += [nums[i]] * nums[i-1] 
+            res.extend([nums[i] for x in range(nums[i-1])])
 
         return res
 
